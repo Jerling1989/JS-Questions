@@ -11,7 +11,7 @@
 // CONVERT STR INTO ARRAY
 // REVERSE ARRAY
 // CONVERT ARRAY BACK TO STRING
-function arrayReverse(str) {
+function firstReverse(str) {
 	return str.split('').reverse().join('');
 }
 
@@ -20,12 +20,19 @@ function arrayReverse(str) {
 // ITERATE THROUGH STR ARGUMENT WITH FOR LOOP
 // FOR EACH ITERATION TAKE CHARACTER AND ADD TO NEW STRING
 // RETURN THE STRING VARIABLE WHEN THE FOR LOOP IS DONE
-function reverse(str) {
+function secondReverse(str) {
 	let newStr = '';
 	for(let character of str) {
 		newStr = character + newStr;
 	}
 	return newStr;
+}
+
+// SOLUTION THREE 
+// USING THE REDUCE HELPER FUNCTION
+// LEAST LIKELY OF THE THREE TO USE IN INTERVIEW
+function reverse(str) {
+	return str.split('').reduce((rev, char) => char + rev, '');
 }
 
 
