@@ -15,12 +15,15 @@ function arrayReverse(str) {
 	return str.split('').reverse().join('');
 }
 
-
+// SOLUTION TWO
+// CREATE AN EMPTY STRING VARIABLE
+// ITERATE THROUGH STR ARGUMENT WITH FOR LOOP
+// FOR EACH ITERATION TAKE CHARACTER AND ADD TO NEW STRING
+// RETURN THE STRING VARIABLE WHEN THE FOR LOOP IS DONE
 function reverse(str) {
-	var newStr = '';
-
-	for(var i = str.length - 1; i >= 0; i--) {
-		var newStr = newStr + str[i];
+	let newStr = '';
+	for(let character of str) {
+		newStr = character + newStr;
 	}
 	return newStr;
 }
