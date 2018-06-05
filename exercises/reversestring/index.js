@@ -8,15 +8,25 @@
 
 
 // SOLUTION ONE
+// CONVERT STR INTO ARRAY
+// REVERSE ARRAY
+// CONVERT ARRAY BACK TO STRING
+function arrayReverse(str) {
+	const arr = str.split('');
+	arr.reverse();
+	return arr.join('');
+}
+
+
 function reverse(str) {
-	// CREATE NEWSTR VARIABLE
 	var newStr = '';
-	// LOOP DOWN THE LENGHT OF THE STR 
+
 	for(var i = str.length - 1; i >= 0; i--) {
 		var newStr = newStr + str[i];
 	}
-	// RETURN NEWSTR
 	return newStr;
 }
+
+
 
 module.exports = reverse;
