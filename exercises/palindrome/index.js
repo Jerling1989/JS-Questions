@@ -9,12 +9,14 @@
 
 // SOLUTION ONE
 function palindrome(str) {
-	var newStr = str.split('').reverse().join('');
-	if (newStr === str) {
-		return true;
-	} else {
-		return false;
-	}
+	const newStr = str.split('').reverse().join('');
+	return newStr === str; // simpler than doing if/else statement below
+
+	// if (newStr === str) {
+	// 	return true;
+	// } else {
+	// 	return false;
+	// }
 }
 
 
