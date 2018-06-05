@@ -9,8 +9,15 @@
 
 // SOLUTION ONE
 function palindrome(str) {
+	// MOST DIRECT WAY
 	const newStr = str.split('').reverse().join('');
-	return newStr === str; // simpler than doing if/else statement below
+	return newStr === str;
+
+	// LONGEST WAY
+	// let newStr = '';
+	// for(let character of str) {
+	// 	newStr = character + newStr;
+	// }
 
 	// if (newStr === str) {
 	// 	return true;
