@@ -16,7 +16,7 @@ function fizzBuzz(n) {
 
 	for (let i = 1; i <= n; i++) {
 
-		if (i % 3 === 0 && i % 5 === 0) { // COULD PUT JUST i % 15 === 0 HERE
+		if (i % 15 === 0) { // COULD PUT JUST i % 15 === 0 HERE
 			console.log('fizzbuzz');
 		} else if (i % 3 === 0) {
 			console.log('fizz');
@@ -25,7 +25,7 @@ function fizzBuzz(n) {
 		} else {
 			console.log(i);
 		}
-		
+
 	}
 }
 
