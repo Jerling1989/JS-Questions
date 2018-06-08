@@ -10,13 +10,13 @@
 // ITERATTIVE SOLUTION
 function vowels(str) {
 	let count = 0;
-	const vowels = ['a', 'e', 'i', 'o', 'u'];
-	
+	const vowelArray = ['a', 'e', 'i', 'o', 'u'];
+
 	for (let char of str.toLowerCase()) {
-		for (let i of vowels) {
-			if (char === i) {
+		// for (let i of vowelArray) {
+			if (vowelArray.includes(char)) {
 				count++
-			}
+			// }
 		}
 	}
 	return count;
