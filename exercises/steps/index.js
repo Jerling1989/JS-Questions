@@ -17,16 +17,47 @@
 //       '### '
 //       '####'
 
+// MY SOLUTION
 function steps(n) {
 	let hash = '';
 	let spaces = ' ';
 
 	for (let i = 1; i <= n; i++) {
-		hash = hash + '#';
+		hash += '#';
 		console.log(hash + spaces.repeat(n - i));
 	}
 }
 
-steps(5);
+
+// VIDEO SOLUTION
+function steps(n) {
+	for (let row = 0; row < n; row++) {
+		let stair = '';
+
+		for (let col = 0; col < n; col++) {
+			if (col <= row) {
+				stair += '#';
+			} else {
+				stair += ' ';
+			}
+		}
+		console.log(stair);
+	}
+}
 
 module.exports = steps;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
