@@ -7,23 +7,19 @@
 //   palindrome("abba") === true
 //   palindrome("abcdefg") === false
 
-// SOLUTION ONE
+// SOLUTION ONE (SHORT)
 function palindrome(str) {
-	// MOST DIRECT WAY
 	const newStr = str.split('').reverse().join('');
 	return newStr === str;
+}
+// SOLUTION TWO (LONG)
+function palindrome(str) {
+	let newStr = '';
 
-	// LONGEST WAY
-	// let newStr = '';
-	// for(let character of str) {
-	// 	newStr = character + newStr;
-	// }
-
-	// if (newStr === str) {
-	// 	return true;
-	// } else {
-	// 	return false;
-	// }
+	for(let character of str) {
+		newStr = character + newStr;
+	}
+	return newStr === str;
 }
 
 
