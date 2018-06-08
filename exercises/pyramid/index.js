@@ -16,14 +16,14 @@
 
 // MY SOLUTION
 function pyramid(n) {
-	let hash = '';
 	for (let i = 1; i <= n; i++) {
-		hash += '#';
-		if (i % 2 !== 0) {
-			console.log(' '.repeat((n - i)/2) + hash + ' '.repeat((n - i)/2));
-		}
+		let hash = '#'.repeat(2 * i - 1);
+		let spaces = ' '.repeat(n - i);
+		console.log(spaces + hash + spaces);
 	}
 }
+
+
 
 pyramid(10);
 
