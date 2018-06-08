@@ -20,11 +20,10 @@
 // MY SOLUTION
 function steps(n) {
 	let hash = '';
-	let spaces = ' ';
 
 	for (let i = 1; i <= n; i++) {
 		hash += '#';
-		console.log(hash + spaces.repeat(n - i));
+		console.log(hash + ' '.repeat(n - i));
 	}
 }
 
@@ -45,19 +44,5 @@ function steps(n) {
 	}
 }
 
+
 module.exports = steps;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
