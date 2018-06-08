@@ -13,13 +13,34 @@ function vowels(str) {
 	const vowelArray = ['a', 'e', 'i', 'o', 'u'];
 
 	for (let char of str.toLowerCase()) {
-		// for (let i of vowelArray) {
-			if (vowelArray.includes(char)) {
+		for (let i of vowelArray) {
+			if (char === i) {
 				count++
-			// }
+			}
 		}
 	}
 	return count;
+}
+
+
+// USING INCLUDES HELPER FUNCTION*
+function vowels(str) {
+	let count = 0;
+	const vowelArray = ['a', 'e', 'i', 'o', 'u'];
+
+	for (let char of str.toLowerCase()) {
+		if (vowelArray.includes(char)) {
+			count++
+		}
+	}
+	return count;
+}
+
+
+// REGEX SOLUTION
+function vowels(str) {
+	const matches = str.match(/[aeiou]/gi);
+	return matches ? matches.length : 0;
 }
 
 module.exports = vowels;
