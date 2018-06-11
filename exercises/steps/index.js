@@ -29,18 +29,19 @@ function steps(n) {
 
 
 // VIDEO SOLUTION
+
 function steps(n) {
 	for (let row = 0; row < n; row++) {
-		let stair = '';
+		let hash = '';
 
 		for (let col = 0; col < n; col++) {
 			if (col <= row) {
-				stair += '#';
+				hash += '#';
 			} else {
-				stair += ' ';
+				hash += ' ';
 			}
 		}
-		console.log(stair);
+		console.log(hash);
 	}
 }
 
