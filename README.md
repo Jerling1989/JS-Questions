@@ -5,4 +5,5 @@ Below I have two resources that you can use to practice for your own coding inte
 
 ---
 
+- [Advanced JavaScript](advanced-js.pdf)
 - [Flash Cards PDF](flashcards.pdf)
