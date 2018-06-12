@@ -5,4 +5,4 @@ Below I have two resources that you can use to practice for your own coding inte
 
 ---
 
-[a relative link](flashcards.pdf)
+[Flash Cards PDF](flashcards.pdf)
